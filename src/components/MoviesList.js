@@ -7,7 +7,7 @@ const MoviesList = (props) => {
         return (
             <MovieContainer key={movie.id}>
             <div className="flexContainter">
-                <img alt={movie.title}src={`http://image.tmdb.org/t/p/w185${movie.poster_path}`} />
+                <img alt={movie.title}src={`https://image.tmdb.org/t/p/w185${movie.poster_path}`} />
                 <div className="movieInfo">
                     <h2>{movie.title}</h2>
                     <p>{movie.overview}</p>
