@@ -2,6 +2,8 @@ import React from 'react'
 import axios from 'axios'
 import SearchBar from './SearchBar'
 import MoviesList from './MoviesList'
+import NavBar from './NavBar'
+import './App.css'
 
 
 class App extends React.Component {
@@ -22,6 +24,7 @@ class App extends React.Component {
     render() {
         return(
             <div>
+                <NavBar />
                 <SearchBar onSubmit={this.onSearchSubmit}/>
                 <MoviesList movies={this.state.movies}/>
             </div>

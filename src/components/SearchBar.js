@@ -1,4 +1,5 @@
 import React from 'react'
+import './SearchBar.css'
 
 class SearchBar extends React.Component {
     state = {
@@ -19,7 +20,7 @@ class SearchBar extends React.Component {
         return (
             <div>
                  <form onSubmit={this.onFormSubmit}>
-                     <label>Movie Search: </label>
+                     <label>Search for movie: </label>
                      <input 
                         type="text"
                         value={this.state.searchItem}
