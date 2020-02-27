@@ -5,8 +5,8 @@ import MovieContainer from './MovieContainer';
 const MoviesList = (props) => {
     const movies = props.movies.map((movie) => {
         return (
-            <MovieContainer>
-            <div className="flexContainter" key={movie.id}>
+            <MovieContainer key={movie.id}>
+            <div className="flexContainter">
                 <img alt={movie.title}src={`http://image.tmdb.org/t/p/w185${movie.poster_path}`} />
                 <div className="movieInfo">
                     <h2>{movie.title}</h2>
