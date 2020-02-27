@@ -1,0 +1,11 @@
+.flexContainter {
+    display: flex;
+}
+.movieInfo {
+    margin-left: 5%;
+}
+
+.movieInfo p {
+    font-size: 18px;
+    line-height: 1.5; 
+}
